@@ -175,15 +175,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [("127.0.0.1", 6379)],
-        },
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
     },
 }
 
-ASGI_APPLICATION = 'core.asgi.application'
+ASGI_APPLICATION = 'core.core.asgi.application'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #for showing in console
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' #to send actual emails
 EMAIL_HOST = 'smtp.gmail.com'  # Use your email provider's SMTP server

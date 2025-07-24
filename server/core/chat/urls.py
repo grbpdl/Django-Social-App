@@ -1,5 +1,6 @@
 from django.urls import path
+from .views import GetOrCreateRoomView
 
 urlpatterns = [
-    # No HTTP endpoints here, just WebSocket
+    path('room/', GetOrCreateRoomView.as_view(), name='get_or_create_room'),
 ]
