@@ -1,0 +1,1160 @@
+type: collection.insomnia.rest/5.0
+name: Rohit Django
+meta:
+  id: wrk_91128d4b6f49415ca3ab9e76f216f2fd
+  created: 1753089691747
+  modified: 1753089691747
+collection:
+  - name: Api Auth
+    meta:
+      id: fld_6df89a02be3f4ee99389221107d6b0ea
+      created: 1753089814130
+      modified: 1753089901260
+      sortKey: -1753089814330
+    children:
+      - name: Auth
+        meta:
+          id: fld_3af345aaa91542ed82d16320a49e2f5a
+          created: 1753090748484
+          modified: 1753090902439
+          sortKey: -1753089896480
+        children:
+          - url: "{{url}}api/auth/login/"
+            name: Login
+            meta:
+              id: req_7629ba13ad9745518a254ac6c9b96461
+              created: 1753090781453
+              modified: 1753156290573
+              isPrivate: false
+              sortKey: -1753090824729
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "username": "rohit",
+                  "password": "password"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+                id: pair_87cee63d109143dabd88aca5c3b41e05
+              - name: User-Agent
+                value: insomnia/11.0.2
+                id: pair_0e29499a3f7c4738a02b9a1827b2ee4c
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/token/refresh/"
+            name: Refresh Token
+            meta:
+              id: req_bff538c33c4e437daa5be0de4988b9ac
+              created: 1753090910895
+              modified: 1753101938849
+              isPrivate: false
+              sortKey: -1753090374165.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MzE4ODA0MSwiaWF0IjoxNzUzMTAxNjQxLCJqdGkiOiI3MzhkNDQxM2E4NTg0ODRlODlmMjkzOWQ0ZWU0NGU3OCIsInVzZXJfaWQiOjEzfQ.CeUF0u21R3LyCjuG_w56_pKVXc2ZyZR_DuSPHOwpsdJI"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/forgot-password/"
+            name: Forgot-password
+            meta:
+              id: req_c3e258ecdd0a4cf68fe88f8155e85448
+              created: 1753090963146
+              modified: 1753156317919
+              isPrivate: false
+              sortKey: -1753090148883.75
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "email": "rohit@tandukar.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/reset-password/"
+            name: Reset-password
+            meta:
+              id: req_8c9a01cd46c04446b75d380cc18dd3c6
+              created: 1753091016268
+              modified: 1753156346056
+              isPrivate: false
+              sortKey: -1753090599447.25
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "email": "rohit@tandukar.com",
+                  "otp": "420562",
+                  "new_password": "password"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Follow
+        meta:
+          id: fld_64c81e3fdf4a4b0da2322b12fc75cd2c
+          created: 1753160793570
+          modified: 1753160810684
+          sortKey: -1753089896580
+        children:
+          - url: "{{url}}api/auth/follow/5/"
+            name: follow user
+            meta:
+              id: req_8f0afe921af24f59944a72219271e90b
+              created: 1753090583754
+              modified: 1753160920147
+              isPrivate: false
+              sortKey: -1753160817331
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "following": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+                id: pair_4070c465397240a0a364be6935e37240
+              - name: User-Agent
+                value: insomnia/11.0.2
+                id: pair_dc96ec90f95b4ccdb303149b6814ea8b
+              - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
+                name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/unfollow/5/"
+            name: Unfollow user
+            meta:
+              id: req_2c0edfe7aadd4989a8835b6fa420f5e4
+              created: 1753160954670
+              modified: 1753160973278
+              isPrivate: false
+              sortKey: -1753159758942.5
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "following": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+                id: pair_4070c465397240a0a364be6935e37240
+              - name: User-Agent
+                value: insomnia/11.0.2
+                id: pair_dc96ec90f95b4ccdb303149b6814ea8b
+              - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
+                name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/followers/"
+            name: Followers
+            meta:
+              id: req_296e07c8993344d4a3aa79959f161b7e
+              created: 1753160994068
+              modified: 1753161010398
+              isPrivate: false
+              sortKey: -1753160288136.75
+            method: GET
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "following": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+                id: pair_4070c465397240a0a364be6935e37240
+              - name: User-Agent
+                value: insomnia/11.0.2
+                id: pair_dc96ec90f95b4ccdb303149b6814ea8b
+              - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
+                name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{url}}api/auth/following/"
+            name: Following
+            meta:
+              id: req_1b60b434a1514e2ab79ffc8a5d0739df
+              created: 1753161023532
+              modified: 1753161030138
+              isPrivate: false
+              sortKey: -1753160023539.625
+            method: GET
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "following": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+                id: pair_4070c465397240a0a364be6935e37240
+              - name: User-Agent
+                value: insomnia/11.0.2
+                id: pair_dc96ec90f95b4ccdb303149b6814ea8b
+              - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
+                name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - url: "{{url}}api/auth/users"
+        name: List Users
+        meta:
+          id: req_b478e34fb22c4222b545ff1be810b514
+          created: 1753089754438
+          modified: 1753161391882
+          isPrivate: false
+          sortKey: -1753089896255
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_f684190435f64f0b9e988313875f3622
+          - id: pair_60e103170fa44d5199c85aa351fd3a4b
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/users/register/"
+        name: Create User
+        meta:
+          id: req_c04a6242e73e43ec93db1f590100a8de
+          created: 1753090226894
+          modified: 1753103419467
+          isPrivate: false
+          sortKey: -1751582694772
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "username": "test1",
+              "email": "new_user@edfdhhsxsamjjple.cojmmmdfdfd",
+              "password": "password"
+
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/users/2/"
+        name: Get user
+        meta:
+          id: req_a8ffcbc2966b4112b03058348667cf8d
+          created: 1753090298538
+          modified: 1753161096493
+          isPrivate: false
+          sortKey: -1752336295513.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_bdb3e4e7e0ec4f39af0a34fd45a06345
+          - id: pair_216163c3ecd94ed7ac7742c3157834a5
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/users/10/update/"
+        name: Update User
+        meta:
+          id: req_b179a56277dd43c3873e3c3671824069
+          created: 1753090388227
+          modified: 1753108443209
+          isPrivate: false
+          sortKey: -1751205894401.25
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              
+              "full_name": "Johnny Doeee",
+            	"email": "pdl.grb11@gmail.com",
+              "profile_picture": "https://example.com/updated_profile.jpg",
+              "is_premium": false
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_2e6a170689304e898528e40101ab09f4
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_b89594f2855e45bebe3d7a2e76f67282
+          - id: pair_155d0b6844a2427d83c5e51214f3e2ea
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwNjQwLCJpYXQiOjE3NTMxMDcwNDAsImp0aSI6ImJiYzZkOWJmNDI4NDQzMWU4MmY4YTU4Mzk2M2M0Y2IyIiwidXNlcl9pZCI6MX0.Jkowa6ZzJBci8XUHGBoV6-MGh0johmurf-WXk2iwayg
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/users/8/delete/"
+        name: Delete User
+        meta:
+          id: req_de21e94949a441d5886662262d9a5317
+          created: 1753090431857
+          modified: 1753107323076
+          isPrivate: false
+          sortKey: -1751959495142.75
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_31537ec12da048158bf8cb20a309aaba
+          - id: pair_efc43cff45594b5287d9f3c1b5d7bbdb
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwODg4LCJpYXQiOjE3NTMxMDcyODgsImp0aSI6IjVkOGYyYWZhZDdhMjQ4OWU5NWIzOGRkZTQyNTMyNjc3IiwidXNlcl9pZCI6MX0.F9I9W2awFD8yk7EIpKbE_FcOAHZMPj61BlSzyJCXie8
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/admin/users/8/promote_premium/"
+        name: Premium Access
+        meta:
+          id: req_dfaf6f4abbb34f4a9877c8536428502f
+          created: 1753107401995
+          modified: 1753108269317
+          isPrivate: false
+          sortKey: -1750640693845.125
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_2e6a170689304e898528e40101ab09f4
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_b89594f2855e45bebe3d7a2e76f67282
+          - id: pair_155d0b6844a2427d83c5e51214f3e2ea
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/admin/users/8/demote_premium/"
+        name: Revoke Premium Access
+        meta:
+          id: req_0851bb03c68c432eb014ba882e5f1f91
+          created: 1753108298184
+          modified: 1753108305510
+          isPrivate: false
+          sortKey: -1750358093567.0625
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_2e6a170689304e898528e40101ab09f4
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_b89594f2855e45bebe3d7a2e76f67282
+          - id: pair_155d0b6844a2427d83c5e51214f3e2ea
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/auth/me/"
+        name: Get info
+        meta:
+          id: req_64a47875603b4178a9c6cbc54ad65ae4
+          created: 1753161558142
+          modified: 1753161566209
+          isPrivate: false
+          sortKey: -1752147895328.125
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_bdb3e4e7e0ec4f39af0a34fd45a06345
+          - id: pair_216163c3ecd94ed7ac7742c3157834a5
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Post
+    meta:
+      id: fld_ccd54d02e2334000b7b4964b03091d15
+      created: 1753089919330
+      modified: 1753089919330
+      sortKey: -1753089919330
+    children:
+      - url: "{{url}}api/posts/"
+        name: List Posts
+        meta:
+          id: req_9af64a6a0fe54ae782fef623142196fc
+          created: 1753089829715
+          modified: 1753156389650
+          isPrivate: false
+          sortKey: -1753089923602
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/"
+        name: create posts
+        meta:
+          id: req_699695eb35ab40f58a03602e5fe5f213
+          created: 1753112788543
+          modified: 1753156667042
+          isPrivate: false
+          sortKey: -1753089909928.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "title": "My New Post",
+              "content": "This is my post content.",
+              "category": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_4257fe3e35db4d16934ff8c32de47b2a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/1/"
+        name: View post
+        meta:
+          id: req_8c4cc1f0a9e044d4bb5d8a1ac751a035
+          created: 1753112843310
+          modified: 1753156686462
+          isPrivate: false
+          sortKey: -1753089903091.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/1/"
+        name: Upadate post
+        meta:
+          id: req_d93edc5b4ba64c11bebad9a5219b62ec
+          created: 1753113195696
+          modified: 1753156751544
+          isPrivate: false
+          sortKey: -1753089899673.375
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "Only updated the content."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_631c7bbd611d4476b7e9a59caa5d194a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/2/"
+        name: Delete post
+        meta:
+          id: req_6473723da3994c71964c9ffe81edd587
+          created: 1753113209733
+          modified: 1753113220391
+          isPrivate: false
+          sortKey: -1753089897964.1875
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categories
+    meta:
+      id: fld_8c6eaf6daf4f43fbae8282db0c01fb73
+      created: 1753110258200
+      modified: 1753110258200
+      sortKey: -1753110258200
+    children:
+      - url: "{{url}}api/posts/categories"
+        name: Categoriess
+        meta:
+          id: req_b9751a237afa4fe480eade4f05146b62
+          created: 1753110270050
+          modified: 1753110281913
+          isPrivate: false
+          sortKey: -1753110273155
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Feed
+    meta:
+      id: fld_c55cdc50b71c48c68e4556763206de6b
+      created: 1753113240532
+      modified: 1753113240532
+      sortKey: -1753113240532
+    children:
+      - url: "{{url}}api/posts/all/"
+        name: All post
+        meta:
+          id: req_f8ddce96757f490cacfb5165684e5198
+          created: 1753113252296
+          modified: 1753162250160
+          isPrivate: false
+          sortKey: -1753113256367
+        method: GET
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+          - id: pair_e03875947cd54e0187cd9217575e09e6
+            name: ordering
+            value: -avg_rating
+            disabled: true
+          - id: pair_98ff266e9ada46bfaaa482246ac614e2
+            name: min_rating
+            value: "5"
+            disabled: true
+          - id: pair_af45b03af5144b7fa45f5ef997396578
+            name: max_rating
+            value: "5"
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY1NzI5LCJpYXQiOjE3NTMxNjIxMjksImp0aSI6IjEwMjk0NGFlMTY1NjQzZGRhN2RjMzcyODE1ODgyOTI4IiwidXNlcl9pZCI6Mn0.790h8Ngwe3APYdvR08JPm3Ke876MbXXi-Iw6LZ3z8Fw
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Like
+    meta:
+      id: fld_9bb3ac864bc941bcb746dad78200e0e3
+      created: 1753114636235
+      modified: 1753114636235
+      sortKey: -1753114636235
+    children:
+      - url: "{{url}}api/likes/posts/3/like/"
+        name: Like on a post
+        meta:
+          id: req_748148e951ea499b853969ab4ac34e7f
+          created: 1753158697549
+          modified: 1753158885373
+          isPrivate: false
+          sortKey: -1753158700554
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "This post is amazing!"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/likes/posts/6/like/"
+        name: UnLike on a post
+        meta:
+          id: req_ea07151da65d4e788b6ae43991d38b80
+          created: 1753158759839
+          modified: 1753158845802
+          isPrivate: false
+          sortKey: -1753136772706
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "This post is amazing!"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Comment
+    meta:
+      id: fld_4554d50c6460401bb1780854d1af3084
+      created: 1753114825217
+      modified: 1753114825217
+      sortKey: -1753114825217
+    children:
+      - url: "{{url}}api/comments/posts/5/comments/"
+        name: Comment on a post
+        meta:
+          id: req_0db1cc83aa8a4a75a99b9c6a42f8864f
+          created: 1753114838910
+          modified: 1753157271594
+          isPrivate: false
+          sortKey: -1753114844858
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "This post is amazing!"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/comments/8/"
+        name: Delete Comment on a post
+        meta:
+          id: req_ad47ad7c63a34b90868eec816008a8dc
+          created: 1753157478590
+          modified: 1753158077447
+          isPrivate: false
+          sortKey: -1753114391620.75
+        method: DELETE
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/comments/6/"
+        name: Update Comment on a post
+        meta:
+          id: req_b8505cc1c0644292991fdaac54d161e5
+          created: 1753157645569
+          modified: 1753157851314
+          isPrivate: false
+          sortKey: -1753114618239.375
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "Updated comment content more"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Rating
+    meta:
+      id: fld_98db99175de64d8a9f7a916f9016a063
+      created: 1753159175625
+      modified: 1753159175625
+      sortKey: -1753113938383.5
+    children:
+      - url: "{{url}}api/ratings/posts/3/rate/"
+        name: Rate a post
+        meta:
+          id: req_f8dd6622696b44d99ec753d382aaad3c
+          created: 1753159175639
+          modified: 1753159479743
+          isPrivate: false
+          sortKey: -1753158700554
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"rating_value": 5
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/ratings/posts/3/rate/"
+        name: Delete Rating
+        meta:
+          id: req_538d1adca8564ff481dbc781ac3768b5
+          created: 1753159289573
+          modified: 1753159295807
+          isPrivate: false
+          sortKey: -1753147736630
+        method: DELETE
+        body:
+          mimeType: application/json
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d8459cd1e85b38e0489e0d59c1cd52a601380fd6
+    created: 1753089691758
+    modified: 1753089691758
+environments:
+  name: Base Environment
+  meta:
+    id: env_d8459cd1e85b38e0489e0d59c1cd52a601380fd6
+    created: 1753089691751
+    modified: 1753089740381
+    isPrivate: false
+  data:
+    url: http://127.0.0.1:8000/
