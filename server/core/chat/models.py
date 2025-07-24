@@ -15,7 +15,7 @@ class ChatRoom(models.Model):
         return f"Chat between {self.user1.username} and {self.user2.username}"
 
 class ChatMessage(models.Model):
-    room = models.ForeignKey(ChatRoom, related_name='messages', on_delete=models.CASCADE)
+    room = models.ForeignKey(ChatRoom, related_name='messages', on_delete=models.CASCADE,blank=True, null=True)
     sender = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='sent_messages')
     message = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
