@@ -1,0 +1,2887 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.0.2"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 29.335,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/follow/5/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"following\": 1\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:09:39 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "139"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 139,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"follower\":2,\"follower_username\":\"rohit\",\"following\":5,\"following_username\":\"new_userr\",\"created_at\":\"2025-07-22T05:09:39.724714Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 29.335,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "follow user"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 18.396,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/auth/followers/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"following\": 1\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:10:11 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "423"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 423,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"follower\":3,\"follower_username\":\"test\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-21T05:22:17.277483Z\"},{\"id\":2,\"follower\":7,\"follower_username\":\"testyy\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:50:16.864017Z\"},{\"id\":4,\"follower\":13,\"follower_username\":\"john_doe_updateddd\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:53:56.980817Z\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.396,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Followers"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 13.852,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/auth/following/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"following\": 1\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:10:31 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "278"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 278,
+						"mimeType": "application/json",
+						"text": "[{\"id\":3,\"follower\":2,\"follower_username\":\"rohit\",\"following\":7,\"following_username\":\"testyy\",\"created_at\":\"2025-07-22T03:50:36.887658Z\"},{\"id\":6,\"follower\":2,\"follower_username\":\"rohit\",\"following\":5,\"following_username\":\"new_userr\",\"created_at\":\"2025-07-22T05:09:39.724714Z\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.852,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Following"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 27.557000000000002,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/auth/unfollow/5/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"following\": 1\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:09:34 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "37"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 27.557000000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Unfollow user"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 24.369,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/likes/posts/3/like/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"content\": \"This post is amazing!\"\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:34:46 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "95"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 95,
+						"mimeType": "application/json",
+						"text": "{\"id\":7,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":3,\"created_at\":\"2025-07-22T04:34:45.997452Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 24.369,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Like on a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 37.267,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/ratings/posts/3/rate/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"rating_value\": 5\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:44:41 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "86"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 86,
+						"mimeType": "application/json",
+						"text": "{\"id\":2,\"user\":2,\"post\":3,\"rating_value\":5,\"created_at\":\"2025-07-22T04:41:42.462036Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 37.267,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Rate a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 27.39,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/ratings/posts/3/rate/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:41:36 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "28"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 27.39,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete Rating"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 17.808999999999997,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/likes/posts/6/like/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"content\": \"This post is amazing!\"\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:34:06 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "34"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 17.808999999999997,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "UnLike on a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 31.718000000000004,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/comments/posts/5/comments/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"content\": \"This post is amazing!\"\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:10:45 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "129"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 129,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":5,\"content\":\"This post is amazing!\",\"created_at\":\"2025-07-22T04:10:45.532132Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 31.718000000000004,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Comment on a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 155.342,
+				"request": {
+					"method": "PATCH",
+					"url": "http://127.0.0.1:8000/api/comments/6/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"content\": \"Updated comment content more\"\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:17:32 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "PUT, PATCH, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "136"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 136,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":5,\"content\":\"Updated comment content more\",\"created_at\":\"2025-07-22T04:10:45.532132Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 155.342,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update Comment on a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 13.703,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/comments/8/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 403,
+					"statusText": "Forbidden",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:21:18 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "PUT, PATCH, DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "63"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 63,
+						"mimeType": "application/json",
+						"text": "{\"detail\":\"You do not have permission to delete this comment.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.703,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete Comment on a post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 41.173,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/posts/all/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY1NzI5LCJpYXQiOjE3NTMxNjIxMjksImp0aSI6IjEwMjk0NGFlMTY1NjQzZGRhN2RjMzcyODE1ODgyOTI4IiwidXNlcl9pZCI6Mn0.790h8Ngwe3APYdvR08JPm3Ke876MbXXi-Iw6LZ3z8Fw"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:30:51 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "2047"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 2047,
+						"mimeType": "application/json",
+						"text": "{\"count\":5,\"next\":null,\"previous\":null,\"results\":[{\"id\":6,\"user\":10,\"category\":4,\"content\":\"not rohit\",\"image_url\":\"https://placehold.co/600x400\",\"likes\":[{\"id\":6,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":6,\"created_at\":\"2025-07-22T04:34:19.273408Z\"}],\"comments\":[{\"id\":8,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":6,\"content\":\"not rohit\",\"created_at\":\"2025-07-22T04:20:33.321109Z\"}],\"average_rating\":0.0,\"created_at\":\"2025-07-22T04:20:05.024844Z\"},{\"id\":5,\"user\":2,\"category\":1,\"content\":\"This is my post content.\",\"image_url\":null,\"likes\":[],\"comments\":[],\"average_rating\":0.0,\"created_at\":\"2025-07-22T03:57:48.293886Z\"},{\"id\":4,\"user\":2,\"category\":null,\"content\":\"ojglsglms\",\"image_url\":\"https://placehold.co/600x400\",\"likes\":[],\"comments\":[],\"average_rating\":0.0,\"created_at\":\"2025-07-22T03:47:39.221030Z\"},{\"id\":3,\"user\":2,\"category\":2,\"content\":\"this is the steps:\\r\\nand ingridients used\",\"image_url\":\"https://placehold.co/600x400\",\"likes\":[{\"id\":3,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":3,\"created_at\":\"2025-07-22T03:48:37.318997Z\"},{\"id\":7,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":3,\"created_at\":\"2025-07-22T04:34:45.997452Z\"}],\"comments\":[],\"average_rating\":5.0,\"created_at\":\"2025-07-22T03:47:18.925433Z\"},{\"id\":1,\"user\":2,\"category\":1,\"content\":\"Only updated the content.\",\"image_url\":null,\"likes\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"created_at\":\"2025-07-21T05:20:03.067072Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"created_at\":\"2025-07-22T03:48:17.815272Z\"},{\"id\":4,\"user\":{\"id\":10,\"username\":\"testyydfefedefehhf\"},\"post\":1,\"created_at\":\"2025-07-22T03:54:29.723914Z\"}],\"comments\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"content\":\"nice recepie\",\"created_at\":\"2025-07-21T05:21:02.572595Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"content\":\"hi\",\"created_at\":\"2025-07-22T03:48:53.613545Z\"},{\"id\":4,\"user\":{\"id\":6,\"username\":\"new_userrr\"},\"post\":1,\"content\":\"kjnk\",\"created_at\":\"2025-07-22T03:54:17.160643Z\"}],\"average_rating\":0.0,\"created_at\":\"2025-07-21T05:19:46.507685Z\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 41.173,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "All post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 24.826,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/posts/categories",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 15:04:42 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "55"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 55,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"name\":\"Vegeterian\"},{\"id\":2,\"name\":\"newari\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 24.826,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Categoriess"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 1263.9180000000001,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/login/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"username\": \"rohit\",\n  \"password\": \"password\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:28:49 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "483"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 483,
+						"mimeType": "application/json",
+						"text": "{\"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MzI0ODUyOSwiaWF0IjoxNzUzMTYyMTI5LCJqdGkiOiI3NzBlMTU4YTAyMWQ0YjMzYTc4YjE4NzU4N2FkZjUwNSIsInVzZXJfaWQiOjJ9.k3--B23rfIqduYbj9iWgnPNS59HJ9tVeDnrnHznxUEA\",\"access\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY1NzI5LCJpYXQiOjE3NTMxNjIxMjksImp0aSI6IjEwMjk0NGFlMTY1NjQzZGRhN2RjMzcyODE1ODgyOTI4IiwidXNlcl9pZCI6Mn0.790h8Ngwe3APYdvR08JPm3Ke876MbXXi-Iw6LZ3z8Fw\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1263.9180000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Login"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 1940.896,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/reset-password/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"email\": \"rohit@tandukar.com\",\n  \"otp\": \"420562\",\n  \"new_password\": \"password\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 03:52:28 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "40"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 40,
+						"mimeType": "application/json",
+						"text": "{\"message\":\"Password reset successful.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1940.896,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Reset-password"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 14.276,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/token/refresh/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MzE4ODA0MSwiaWF0IjoxNzUzMTAxNjQxLCJqdGkiOiI3MzhkNDQxM2E4NTg0ODRlODlmMjkzOWQ0ZWU0NGU3OCIsInVzZXJfaWQiOjEzfQ.CeUF0u21R3LyCjuG_w56_pKVXc2ZyZR_DuSPHOwpsdJI\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 401,
+					"statusText": "Unauthorized",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 12:45:39 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "WWW-Authenticate",
+							"value": "Bearer realm=\"api\""
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "54"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 54,
+						"mimeType": "application/json",
+						"text": "{\"detail\":\"Token is invalid\",\"code\":\"token_not_valid\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 14.276,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Refresh Token"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 156.884,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/forgot-password/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"email\": \"rohit@tandukar.com\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 03:51:59 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "36"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 36,
+						"mimeType": "application/json",
+						"text": "{\"message\":\"OTP sent successfully.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 156.884,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Forgot-password"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 29.58,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/posts/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 04:52:10 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1598"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 1598,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"user\":2,\"category\":1,\"content\":\"Only updated the content.\",\"image_url\":null,\"likes\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"created_at\":\"2025-07-21T05:20:03.067072Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"created_at\":\"2025-07-22T03:48:17.815272Z\"},{\"id\":4,\"user\":{\"id\":10,\"username\":\"testyydfefedefehhf\"},\"post\":1,\"created_at\":\"2025-07-22T03:54:29.723914Z\"}],\"comments\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"content\":\"nice recepie\",\"created_at\":\"2025-07-21T05:21:02.572595Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"content\":\"hi\",\"created_at\":\"2025-07-22T03:48:53.613545Z\"},{\"id\":4,\"user\":{\"id\":6,\"username\":\"new_userrr\"},\"post\":1,\"content\":\"kjnk\",\"created_at\":\"2025-07-22T03:54:17.160643Z\"}],\"average_rating\":0.0,\"created_at\":\"2025-07-21T05:19:46.507685Z\"},{\"id\":3,\"user\":2,\"category\":2,\"content\":\"this is the steps:\\r\\nand ingridients used\",\"image_url\":\"https://placehold.co/600x400\",\"likes\":[{\"id\":3,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":3,\"created_at\":\"2025-07-22T03:48:37.318997Z\"},{\"id\":7,\"user\":{\"id\":2,\"username\":\"rohit\"},\"post\":3,\"created_at\":\"2025-07-22T04:34:45.997452Z\"}],\"comments\":[],\"average_rating\":5.0,\"created_at\":\"2025-07-22T03:47:18.925433Z\"},{\"id\":4,\"user\":2,\"category\":null,\"content\":\"ojglsglms\",\"image_url\":\"https://placehold.co/600x400\",\"likes\":[],\"comments\":[],\"average_rating\":0.0,\"created_at\":\"2025-07-22T03:47:39.221030Z\"},{\"id\":5,\"user\":2,\"category\":1,\"content\":\"This is my post content.\",\"image_url\":null,\"likes\":[],\"comments\":[],\"average_rating\":0.0,\"created_at\":\"2025-07-22T03:57:48.293886Z\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 29.58,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List Posts"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 46.425000000000004,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/posts/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"title\": \"My New Post\",\n  \"content\": \"This is my post content.\",\n  \"category\": 1\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 03:57:48 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "152"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 152,
+						"mimeType": "application/json",
+						"text": "{\"id\":5,\"user\":2,\"category\":1,\"content\":\"This is my post content.\",\"image_url\":null,\"likes\":[],\"comments\":[],\"created_at\":\"2025-07-22T03:57:48.293886Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 46.425000000000004,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "create posts"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 26.558,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/posts/1/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 03:58:08 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "802"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 802,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"user\":2,\"category\":1,\"content\":\"this is a authentic dish\",\"image_url\":null,\"likes\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"created_at\":\"2025-07-21T05:20:03.067072Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"created_at\":\"2025-07-22T03:48:17.815272Z\"},{\"id\":4,\"user\":{\"id\":10,\"username\":\"testyydfefedefehhf\"},\"post\":1,\"created_at\":\"2025-07-22T03:54:29.723914Z\"}],\"comments\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"content\":\"nice recepie\",\"created_at\":\"2025-07-21T05:21:02.572595Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"content\":\"hi\",\"created_at\":\"2025-07-22T03:48:53.613545Z\"},{\"id\":4,\"user\":{\"id\":6,\"username\":\"new_userrr\"},\"post\":1,\"content\":\"kjnk\",\"created_at\":\"2025-07-22T03:54:17.160643Z\"}],\"created_at\":\"2025-07-21T05:19:46.507685Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 26.558,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "View post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 25.232,
+				"request": {
+					"method": "PATCH",
+					"url": "http://127.0.0.1:8000/api/posts/1/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"content\": \"Only updated the content.\"\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 03:59:12 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "803"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 803,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"user\":2,\"category\":1,\"content\":\"Only updated the content.\",\"image_url\":null,\"likes\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"created_at\":\"2025-07-21T05:20:03.067072Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"created_at\":\"2025-07-22T03:48:17.815272Z\"},{\"id\":4,\"user\":{\"id\":10,\"username\":\"testyydfefedefehhf\"},\"post\":1,\"created_at\":\"2025-07-22T03:54:29.723914Z\"}],\"comments\":[{\"id\":1,\"user\":{\"id\":3,\"username\":\"test\"},\"post\":1,\"content\":\"nice recepie\",\"created_at\":\"2025-07-21T05:21:02.572595Z\"},{\"id\":2,\"user\":{\"id\":7,\"username\":\"testyy\"},\"post\":1,\"content\":\"hi\",\"created_at\":\"2025-07-22T03:48:53.613545Z\"},{\"id\":4,\"user\":{\"id\":6,\"username\":\"new_userrr\"},\"post\":1,\"content\":\"kjnk\",\"created_at\":\"2025-07-22T03:54:17.160643Z\"}],\"created_at\":\"2025-07-21T05:19:46.507685Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 25.232,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Upadate post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 33.654,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/posts/2/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 15:53:41 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 33.654,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete post"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 18.571,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/auth/users",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 403,
+					"statusText": "Forbidden",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:16:34 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "63"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 63,
+						"mimeType": "application/json",
+						"text": "{\"detail\":\"You do not have permission to perform this action.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.571,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List Users"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 20.1,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/auth/users/2/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:16:38 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "897"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 897,
+						"mimeType": "application/json",
+						"text": "{\"id\":2,\"username\":\"rohit\",\"email\":\"rohit@tandukar.com\",\"full_name\":\"rohit tandukar\",\"profile_picture\":null,\"is_premium\":false,\"followers\":[{\"id\":1,\"follower\":3,\"follower_username\":\"test\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-21T05:22:17.277483Z\"},{\"id\":2,\"follower\":7,\"follower_username\":\"testyy\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:50:16.864017Z\"},{\"id\":4,\"follower\":13,\"follower_username\":\"john_doe_updateddd\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:53:56.980817Z\"}],\"following\":[{\"id\":3,\"follower\":2,\"follower_username\":\"rohit\",\"following\":7,\"following_username\":\"testyy\",\"created_at\":\"2025-07-22T03:50:36.887658Z\"},{\"id\":6,\"follower\":2,\"follower_username\":\"rohit\",\"following\":5,\"following_username\":\"new_userr\",\"created_at\":\"2025-07-22T05:09:39.724714Z\"}],\"created_at\":\"2025-07-21T05:18:02.136245Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 20.1,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Get user"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 270.827,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:8000/api/auth/me/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 22 Jul 2025 05:22:29 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "936"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 936,
+						"mimeType": "application/json",
+						"text": "{\"id\":2,\"username\":\"rohit\",\"email\":\"rohit@tandukar.com\",\"full_name\":\"rohit tandukar\",\"profile_picture\":null,\"is_premium\":false,\"followers\":[{\"id\":1,\"follower\":3,\"follower_username\":\"test\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-21T05:22:17.277483Z\"},{\"id\":2,\"follower\":7,\"follower_username\":\"testyy\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:50:16.864017Z\"},{\"id\":4,\"follower\":13,\"follower_username\":\"john_doe_updateddd\",\"following\":2,\"following_username\":\"rohit\",\"created_at\":\"2025-07-22T03:53:56.980817Z\"}],\"following\":[{\"id\":3,\"follower\":2,\"follower_username\":\"rohit\",\"following\":7,\"following_username\":\"testyy\",\"created_at\":\"2025-07-22T03:50:36.887658Z\"},{\"id\":6,\"follower\":2,\"follower_username\":\"rohit\",\"following\":5,\"following_username\":\"new_userr\",\"created_at\":\"2025-07-22T05:09:39.724714Z\"}],\"follower_count\":3,\"following_count\":2,\"created_at\":\"2025-07-21T05:18:02.136245Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 270.827,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Get info"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 41.946999999999996,
+				"request": {
+					"method": "DELETE",
+					"url": "http://127.0.0.1:8000/api/auth/users/8/delete/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwODg4LCJpYXQiOjE3NTMxMDcyODgsImp0aSI6IjVkOGYyYWZhZDdhMjQ4OWU5NWIzOGRkZTQyNTMyNjc3IiwidXNlcl9pZCI6MX0.F9I9W2awFD8yk7EIpKbE_FcOAHZMPj61BlSzyJCXie8"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 14:15:24 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "DELETE, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 41.946999999999996,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete User"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 77.597,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/users/register/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"username\": \"test1\",\n  \"email\": \"new_user@edfdhhsxsamjjple.cojmmmdfdfd\",\n  \"password\": \"password\"\n\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 400,
+					"statusText": "Bad Request",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 13:10:56 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "107"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 107,
+						"mimeType": "application/json",
+						"text": "{\"username\":[\"A user with that username already exists.\"],\"email\":[\"user with this email already exists.\"]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 77.597,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create User"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 105.298,
+				"request": {
+					"method": "PATCH",
+					"url": "http://127.0.0.1:8000/api/auth/users/10/update/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwNjQwLCJpYXQiOjE3NTMxMDcwNDAsImp0aSI6ImJiYzZkOWJmNDI4NDQzMWU4MmY4YTU4Mzk2M2M0Y2IyIiwidXNlcl9pZCI6MX0.Jkowa6ZzJBci8XUHGBoV6-MGh0johmurf-WXk2iwayg"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \n  \"full_name\": \"Johnny Doeee\",\n\t\"email\": \"pdl.grb11@gmail.com\",\n  \"profile_picture\": \"https://example.com/updated_profile.jpg\",\n  \"is_premium\": false\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 14:34:05 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "PUT, PATCH, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "220"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 220,
+						"mimeType": "application/json",
+						"text": "{\"id\":10,\"username\":\"testyydfefedefehhf\",\"email\":\"pdl.grb11@gmail.com\",\"full_name\":\"Johnny Doeee\",\"profile_picture\":\"https://example.com/updated_profile.jpg\",\"is_premium\":false,\"created_at\":\"2025-07-21T12:06:39.157916Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 105.298,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update User"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 13.381,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/admin/users/8/promote_premium/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 14:31:09 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "28"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 28,
+						"mimeType": "application/json",
+						"text": "{\"detail\":\"User not found.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.381,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Premium Access"
+			},
+			{
+				"startedDateTime": "2025-07-24T09:43:36.835Z",
+				"time": 12.194,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/api/auth/admin/users/8/demote_premium/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Mon, 21 Jul 2025 14:31:46 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.5"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "Content-Length",
+							"value": "28"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 28,
+						"mimeType": "application/json",
+						"text": "{\"detail\":\"User not found.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 12.194,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Revoke Premium Access"
+			}
+		]
+	}
+}
