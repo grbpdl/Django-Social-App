@@ -2,8 +2,8 @@ from rest_framework.views import APIView
 from django.db.models import Avg
 from rest_framework.response import Response
 from rest_framework import status, permissions
-from .models import Post
-from .serializers import PostSerializer
+from .models import Post, PostCategory
+from .serializers import PostSerializer, PostCategorySerializer
 from rest_framework.permissions import AllowAny 
 from rest_framework import generics, filters
 from django_filters.rest_framework import DjangoFilterBackend, FilterSet, NumberFilter
@@ -91,6 +91,20 @@ class PostFilter(FilterSet):
     def filter_max_rating(self, queryset, name, value):
         return queryset.annotate(avg_rating=Avg('ratings__rating_value')).filter(avg_rating__lte=value)
 
+
+class CategoryListCreateAPIView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    def get(self, request):
+        categories = PostCategory.objects.all()
+        serializer = PostCategorySerializer(categories, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):        
+        serializer = PostCategorySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class AllPostsListAPIView(generics.ListAPIView):
     serializer_class = PostSerializer
