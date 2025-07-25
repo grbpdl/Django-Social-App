@@ -12,14 +12,15 @@ class PostCategorySerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     category = serializers.PrimaryKeyRelatedField(queryset=PostCategory.objects.all())
-    likes = LikeSerializer(many=True, read_only=True)      # related_name='likes' in Like model
-    comments = CommentSerializer(many=True, read_only=True)  # related_name='comments' in Comme
+    likes = LikeSerializer(many=True, read_only=True)
+    comments = CommentSerializer(many=True, read_only=True)
     average_rating = serializers.SerializerMethodField()
 
     class Meta:
         model = Post
-        fields = ['id', 'user', 'category', 'content', 'image_url','likes', 'comments','average_rating',  'created_at']
+        fields = [f.name for f in Post._meta.get_fields() if not f.is_relation or f.one_to_one or (f.many_to_one and f.related_model)] + ['likes', 'comments', 'average_rating']
         read_only_fields = ['user']
+
     def get_average_rating(self, obj):
         avg = obj.ratings.aggregate(avg_rating=Avg('rating_value'))['avg_rating']
         return round(avg, 2) if avg is not None else 0.0
