@@ -17,7 +17,7 @@ urlpatterns = [
     path('api/ratings/', include('ratings.urls')),
 
     # Messaging & Premium Chat
-    # path('api/chat/', include('chat.urls')),
+    path('api/chat/', include('chat.urls')),
 
     # Notifications
     # path('api/notifications/', include('notifications.urls')),
