@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Test</title>
+</head>
+<body>
+  <h2>Simple Chat Test</h2>
+  <input id="token" placeholder="JWT Token" style="width:300px"><br>
+  <input id="room" placeholder="Room Name" value="room_1_2"><br>
+  <button onclick="connect()">Connect</button>
+  <div id="status"></div>
+  <div id="chat"></div>
+  <input id="msg" placeholder="Type message..." style="width:300px">
+  <button onclick="sendMsg()">Send</button>
+  <script>
+    let ws;
+    function connect() {
+      const token = document.getElementById('token').value;
+      const room = document.getElementById('room').value;
+      ws = new WebSocket(`ws://localhost:8000/ws/chat/${room}/?token=${token}`);
+      ws.onopen = () => document.getElementById('status').innerText = "Connected!";
+      ws.onmessage = (event) => {
+        const chat = document.getElementById('chat');
+        chat.innerHTML += `<div>Received: ${event.data}</div>`;
+      };
+      ws.onclose = () => document.getElementById('status').innerText = "Closed";
+    }
+    function sendMsg() {
+      const msg = document.getElementById('msg').value;
+      ws.send(JSON.stringify({message: msg}));
+      document.getElementById('chat').innerHTML += `<div>Sent: ${msg}</div>`;
+      document.getElementById('msg').value = '';
+    }
+  </script>
+</body>
+</html>

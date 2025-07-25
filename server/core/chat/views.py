@@ -39,3 +39,17 @@ class GetOrCreateRoomView(APIView):
         room, created = ChatRoom.objects.get_or_create(user1=min(user1, user2, key=lambda u: u.id), user2=max(user1, user2, key=lambda u: u.id))
         serializer = ChatRoomSerializer(room)
         return Response(serializer.data)
+
+class MarkMessagesReadView(APIView):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, room_name):
+        from .models import ChatRoom, ChatMessage
+        try:
+            room = ChatRoom.objects.get(room_name=room_name)
+        except ChatRoom.DoesNotExist:
+            return Response({'error': 'Chat room does not exist.'}, status=status.HTTP_404_NOT_FOUND)
+        # Mark all messages in this room as read for the current user (not sent by the user)
+        updated = ChatMessage.objects.filter(room=room, is_read=False).exclude(sender=request.user).update(is_read=True)
+        return Response({'marked_read': updated})
