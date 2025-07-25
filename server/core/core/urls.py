@@ -20,7 +20,7 @@ urlpatterns = [
     path('api/chat/', include('chat.urls')),
 
     # Notifications
-    # path('api/notifications/', include('notifications.urls')),
+    path('api/notifications/', include('notifications.urls')),
 
     # (Optional) Category filter/search
     # path('api/categories/', include('categories.urls')),
