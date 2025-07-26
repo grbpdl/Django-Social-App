@@ -24,7 +24,7 @@ collection:
             meta:
               id: req_7629ba13ad9745518a254ac6c9b96461
               created: 1753090781453
-              modified: 1753156290573
+              modified: 1753436642438
               isPrivate: false
               sortKey: -1753090824729
             method: POST
@@ -32,7 +32,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                  "username": "rohit",
+                  "username": "test2",
                   "password": "password"
                 }
             headers:
@@ -148,7 +148,7 @@ collection:
             meta:
               id: req_8f0afe921af24f59944a72219271e90b
               created: 1753090583754
-              modified: 1753160920147
+              modified: 1753534689947
               isPrivate: false
               sortKey: -1753160817331
             method: POST
@@ -167,8 +167,7 @@ collection:
                 id: pair_dc96ec90f95b4ccdb303149b6814ea8b
               - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
                 name: Authorization
-                value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                value: "{{access_token}}"
                 disabled: false
             settings:
               renderRequestBody: true
@@ -183,7 +182,7 @@ collection:
             meta:
               id: req_2c0edfe7aadd4989a8835b6fa420f5e4
               created: 1753160954670
-              modified: 1753160973278
+              modified: 1753534703180
               isPrivate: false
               sortKey: -1753159758942.5
             method: DELETE
@@ -202,8 +201,7 @@ collection:
                 id: pair_dc96ec90f95b4ccdb303149b6814ea8b
               - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
                 name: Authorization
-                value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                value: "{{access_token}}"
                 disabled: false
             settings:
               renderRequestBody: true
@@ -218,7 +216,7 @@ collection:
             meta:
               id: req_296e07c8993344d4a3aa79959f161b7e
               created: 1753160994068
-              modified: 1753161010398
+              modified: 1753534693740
               isPrivate: false
               sortKey: -1753160288136.75
             method: GET
@@ -237,8 +235,7 @@ collection:
                 id: pair_dc96ec90f95b4ccdb303149b6814ea8b
               - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
                 name: Authorization
-                value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                value: "{{access_token}}"
                 disabled: false
             settings:
               renderRequestBody: true
@@ -253,7 +250,7 @@ collection:
             meta:
               id: req_1b60b434a1514e2ab79ffc8a5d0739df
               created: 1753161023532
-              modified: 1753161030138
+              modified: 1753534699252
               isPrivate: false
               sortKey: -1753160023539.625
             method: GET
@@ -272,8 +269,7 @@ collection:
                 id: pair_dc96ec90f95b4ccdb303149b6814ea8b
               - id: pair_6d50b42ddbcb4ed8a02355cd65c30761
                 name: Authorization
-                value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+                value: "{{access_token}}"
                 disabled: false
             settings:
               renderRequestBody: true
@@ -288,7 +284,7 @@ collection:
         meta:
           id: req_b478e34fb22c4222b545ff1be810b514
           created: 1753089754438
-          modified: 1753161391882
+          modified: 1753534671798
           isPrivate: false
           sortKey: -1753089896255
         method: GET
@@ -298,8 +294,7 @@ collection:
             id: pair_f684190435f64f0b9e988313875f3622
           - id: pair_60e103170fa44d5199c85aa351fd3a4b
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -314,7 +309,7 @@ collection:
         meta:
           id: req_c04a6242e73e43ec93db1f590100a8de
           created: 1753090226894
-          modified: 1753103419467
+          modified: 1753420106576
           isPrivate: false
           sortKey: -1751582694772
         method: POST
@@ -322,8 +317,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-              "username": "test1",
-              "email": "new_user@edfdhhsxsamjjple.cojmmmdfdfd",
+              "username": "test3",
+              "email": "new_user@edffdhhsxdsamjjple.cojmmmdfdfd",
               "password": "password"
 
             }
@@ -345,7 +340,7 @@ collection:
         meta:
           id: req_a8ffcbc2966b4112b03058348667cf8d
           created: 1753090298538
-          modified: 1753161096493
+          modified: 1753534664948
           isPrivate: false
           sortKey: -1752336295513.5
         method: GET
@@ -355,8 +350,7 @@ collection:
             id: pair_bdb3e4e7e0ec4f39af0a34fd45a06345
           - id: pair_216163c3ecd94ed7ac7742c3157834a5
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -371,7 +365,7 @@ collection:
         meta:
           id: req_b179a56277dd43c3873e3c3671824069
           created: 1753090388227
-          modified: 1753108443209
+          modified: 1753534648153
           isPrivate: false
           sortKey: -1751205894401.25
         method: PATCH
@@ -394,8 +388,7 @@ collection:
             id: pair_b89594f2855e45bebe3d7a2e76f67282
           - id: pair_155d0b6844a2427d83c5e51214f3e2ea
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwNjQwLCJpYXQiOjE3NTMxMDcwNDAsImp0aSI6ImJiYzZkOWJmNDI4NDQzMWU4MmY4YTU4Mzk2M2M0Y2IyIiwidXNlcl9pZCI6MX0.Jkowa6ZzJBci8XUHGBoV6-MGh0johmurf-WXk2iwayg
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -410,7 +403,7 @@ collection:
         meta:
           id: req_de21e94949a441d5886662262d9a5317
           created: 1753090431857
-          modified: 1753107323076
+          modified: 1753534656478
           isPrivate: false
           sortKey: -1751959495142.75
         method: DELETE
@@ -420,8 +413,7 @@ collection:
             id: pair_31537ec12da048158bf8cb20a309aaba
           - id: pair_efc43cff45594b5287d9f3c1b5d7bbdb
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEwODg4LCJpYXQiOjE3NTMxMDcyODgsImp0aSI6IjVkOGYyYWZhZDdhMjQ4OWU5NWIzOGRkZTQyNTMyNjc3IiwidXNlcl9pZCI6MX0.F9I9W2awFD8yk7EIpKbE_FcOAHZMPj61BlSzyJCXie8
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -436,7 +428,7 @@ collection:
         meta:
           id: req_dfaf6f4abbb34f4a9877c8536428502f
           created: 1753107401995
-          modified: 1753108269317
+          modified: 1753534644170
           isPrivate: false
           sortKey: -1750640693845.125
         method: POST
@@ -451,8 +443,7 @@ collection:
             id: pair_b89594f2855e45bebe3d7a2e76f67282
           - id: pair_155d0b6844a2427d83c5e51214f3e2ea
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -467,7 +458,7 @@ collection:
         meta:
           id: req_0851bb03c68c432eb014ba882e5f1f91
           created: 1753108298184
-          modified: 1753108305510
+          modified: 1753534638860
           isPrivate: false
           sortKey: -1750358093567.0625
         method: POST
@@ -482,8 +473,7 @@ collection:
             id: pair_b89594f2855e45bebe3d7a2e76f67282
           - id: pair_155d0b6844a2427d83c5e51214f3e2ea
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTExMDgwLCJpYXQiOjE3NTMxMDc0ODAsImp0aSI6IjY1N2NlYjJlNDA5MTRhYTlhNWU4MDM4NTE1MzQzZTkxIiwidXNlcl9pZCI6MX0.VkUjboj8zTNsAG5oggrNHw5_h5mop09jaYfodHqDOuE
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -498,7 +488,7 @@ collection:
         meta:
           id: req_64a47875603b4178a9c6cbc54ad65ae4
           created: 1753161558142
-          modified: 1753161566209
+          modified: 1753534660458
           isPrivate: false
           sortKey: -1752147895328.125
         method: GET
@@ -508,8 +498,7 @@ collection:
             id: pair_bdb3e4e7e0ec4f39af0a34fd45a06345
           - id: pair_216163c3ecd94ed7ac7742c3157834a5
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY0NDg4LCJpYXQiOjE3NTMxNjA4ODgsImp0aSI6ImE4MGJiNTNkZTIxNjQ5MjM4MjhkZDU0NDI2NzRhODMyIiwidXNlcl9pZCI6Mn0.c7zgjFASP5dKdu1ATsTHTQzi3Aqsds0SUgYFFjnnO0o
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -531,7 +520,7 @@ collection:
         meta:
           id: req_9af64a6a0fe54ae782fef623142196fc
           created: 1753089829715
-          modified: 1753156389650
+          modified: 1753534733575
           isPrivate: false
           sortKey: -1753089923602
         method: GET
@@ -541,8 +530,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -557,7 +545,7 @@ collection:
         meta:
           id: req_699695eb35ab40f58a03602e5fe5f213
           created: 1753112788543
-          modified: 1753156667042
+          modified: 1753534026260
           isPrivate: false
           sortKey: -1753089909928.5
         method: POST
@@ -578,8 +566,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -594,7 +581,7 @@ collection:
         meta:
           id: req_8c4cc1f0a9e044d4bb5d8a1ac751a035
           created: 1753112843310
-          modified: 1753156686462
+          modified: 1753534727276
           isPrivate: false
           sortKey: -1753089903091.75
         method: GET
@@ -604,8 +591,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -620,7 +606,7 @@ collection:
         meta:
           id: req_d93edc5b4ba64c11bebad9a5219b62ec
           created: 1753113195696
-          modified: 1753156751544
+          modified: 1753534722889
           isPrivate: false
           sortKey: -1753089899673.375
         method: PATCH
@@ -639,8 +625,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -655,7 +640,7 @@ collection:
         meta:
           id: req_6473723da3994c71964c9ffe81edd587
           created: 1753113209733
-          modified: 1753113220391
+          modified: 1753534718416
           isPrivate: false
           sortKey: -1753089897964.1875
         method: DELETE
@@ -665,8 +650,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -683,12 +667,12 @@ collection:
       modified: 1753110258200
       sortKey: -1753110258200
     children:
-      - url: "{{url}}api/posts/categories"
-        name: Categoriess
+      - url: "{{url}}api/posts/categories/"
+        name: List
         meta:
           id: req_b9751a237afa4fe480eade4f05146b62
           created: 1753110270050
-          modified: 1753110281913
+          modified: 1753438507768
           isPrivate: false
           sortKey: -1753110273155
         method: GET
@@ -698,8 +682,38 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTEzNzY0LCJpYXQiOjE3NTMxMTAxNjQsImp0aSI6ImI3ZDI1YTU1OTMxZDRiMWNhNDAyNTA4M2EwODc2NTE5IiwidXNlcl9pZCI6MX0.O3OqE15PtNQR-mRzGJL8LuHppvRkE8If5LlF9mtFpbc
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/categories/"
+        name: Create
+        meta:
+          id: req_2cac5a29ffc94c46b48066cd165da0e0
+          created: 1753437080747
+          modified: 1753534751869
+          isPrivate: false
+          sortKey: -1753100548942
+        method: POST
+        body:
+          mimeType: application/json
+          text: '{ "name": "New Category" }'
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_141ecee42b624a5bb2c12622cc316101
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -721,7 +735,7 @@ collection:
         meta:
           id: req_f8ddce96757f490cacfb5165684e5198
           created: 1753113252296
-          modified: 1753162250160
+          modified: 1753533972461
           isPrivate: false
           sortKey: -1753113256367
         method: GET
@@ -760,8 +774,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY1NzI5LCJpYXQiOjE3NTMxNjIxMjksImp0aSI6IjEwMjk0NGFlMTY1NjQzZGRhN2RjMzcyODE1ODgyOTI4IiwidXNlcl9pZCI6Mn0.790h8Ngwe3APYdvR08JPm3Ke876MbXXi-Iw6LZ3z8Fw
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -783,7 +796,7 @@ collection:
         meta:
           id: req_748148e951ea499b853969ab4ac34e7f
           created: 1753158697549
-          modified: 1753158885373
+          modified: 1753534771840
           isPrivate: false
           sortKey: -1753158700554
         method: POST
@@ -819,8 +832,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -835,7 +847,7 @@ collection:
         meta:
           id: req_ea07151da65d4e788b6ae43991d38b80
           created: 1753158759839
-          modified: 1753158845802
+          modified: 1753534775185
           isPrivate: false
           sortKey: -1753136772706
         method: DELETE
@@ -871,8 +883,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -894,7 +905,7 @@ collection:
         meta:
           id: req_0db1cc83aa8a4a75a99b9c6a42f8864f
           created: 1753114838910
-          modified: 1753157271594
+          modified: 1753534783252
           isPrivate: false
           sortKey: -1753114844858
         method: POST
@@ -930,8 +941,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -946,7 +956,7 @@ collection:
         meta:
           id: req_ad47ad7c63a34b90868eec816008a8dc
           created: 1753157478590
-          modified: 1753158077447
+          modified: 1753534791070
           isPrivate: false
           sortKey: -1753114391620.75
         method: DELETE
@@ -973,8 +983,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -989,7 +998,7 @@ collection:
         meta:
           id: req_b8505cc1c0644292991fdaac54d161e5
           created: 1753157645569
-          modified: 1753157851314
+          modified: 1753534787446
           isPrivate: false
           sortKey: -1753114618239.375
         method: PATCH
@@ -1025,8 +1034,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -1048,7 +1056,7 @@ collection:
         meta:
           id: req_f8dd6622696b44d99ec753d382aaad3c
           created: 1753159175639
-          modified: 1753159479743
+          modified: 1753534761003
           isPrivate: false
           sortKey: -1753158700554
         method: POST
@@ -1084,8 +1092,7 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -1100,7 +1107,7 @@ collection:
         meta:
           id: req_538d1adca8564ff481dbc781ac3768b5
           created: 1753159289573
-          modified: 1753159295807
+          modified: 1753534765044
           isPrivate: false
           sortKey: -1753147736630
         method: DELETE
@@ -1132,8 +1139,207 @@ collection:
             id: pair_06a83fa06d454db780166685cd88e56c
           - id: pair_6f3847dea7a940259b1f217a302b1e25
             name: Authorization
-            value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTU5OTU2LCJpYXQiOjE3NTMxNTYzNTYsImp0aSI6ImMyODkwZTJjMWJjMTRiZjliMGM3NzNkOGE4MzE3MDFiIiwidXNlcl9pZCI6Mn0.L7MZHDyTWte_JgSHPVCR1oVlLegBCD3iQ6OsZEAXjpU
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Chat
+    meta:
+      id: fld_17c7a5e6a40145edbb7d028228a27132
+      created: 1753420486678
+      modified: 1753420486678
+      sortKey: -1753420486678
+    children:
+      - url: "{{url}}api/chat/room/room_1_2/messages/"
+        name: Get chats
+        meta:
+          id: req_bcfb02c1409845f496eb8078343e7373
+          created: 1753420498241
+          modified: 1753534801465
+          isPrivate: false
+          sortKey: -1753420507819
+        method: GET
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "This post is amazing!"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/chat/room/room_1_2/mark_read/"
+        name: Mark Read
+        meta:
+          id: req_be57b830467048c993d7b012baf8c004
+          created: 1753436498924
+          modified: 1753534805040
+          isPrivate: false
+          sortKey: -1753290662575
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "content": "This post is amazing!"
+            }
+        parameters:
+          - id: pair_cb69c86fc6e84dbda78a0268f70c1dc9
+            name: page
+            value: "2"
+            disabled: true
+          - id: pair_709ac61592e04a4ab05f3b94c691348c
+            name: category
+            value: "2"
+            disabled: true
+          - id: pair_e930eccf34ed4949b29793b5a97cb59a
+            name: search
+            value: dish
+            disabled: true
+          - id: pair_eec01b7925af4c9fafab442f2f8377f8
+            name: ordering
+            value: created_at
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_72237cd6da144bf4a180891b739ba45a
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Notifications
+    meta:
+      id: fld_a11067efdef04b5a877715505916cb87
+      created: 1753441928559
+      modified: 1753441933206
+      sortKey: -1753100088765
+    children:
+      - url: "{{url}}api/notifications/"
+        name: List
+        meta:
+          id: req_28ff90426a1b442d8beac04547062576
+          created: 1753441928574
+          modified: 1753441972840
+          isPrivate: false
+          sortKey: -1753110273155
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/notifications/push/"
+        name: Send
+        meta:
+          id: req_e05ad237a5cc4a7c9bae0eea5f130658
+          created: 1753441988470
+          modified: 1753442270107
+          isPrivate: false
+          sortKey: -1753105411048.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "user": 2,           
+              "message": "Hello!"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/notifications/2/read/"
+        name: Read
+        meta:
+          id: req_4ced64dd70de46eea92a4d36deaea313
+          created: 1753442093504
+          modified: 1753442293665
+          isPrivate: false
+          sortKey: -1753102979995.25
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
             disabled: false
         settings:
           renderRequestBody: true
@@ -1154,7 +1360,9 @@ environments:
   meta:
     id: env_d8459cd1e85b38e0489e0d59c1cd52a601380fd6
     created: 1753089691751
-    modified: 1753089740381
+    modified: 1753533991181
     isPrivate: false
   data:
     url: http://127.0.0.1:8000/
+    access_token: Bearer
+      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzNjIwMzUxLCJpYXQiOjE3NTM1MzM5NTEsImp0aSI6IjhkOGIxZGRhNzdjMzQwY2E5YWY2NTNkOGM0MjBiMTczIiwidXNlcl9pZCI6Mn0._t7gTwgLIeY_59Yqh0ecU8vzMtkie79SACUCC_bOtRE
