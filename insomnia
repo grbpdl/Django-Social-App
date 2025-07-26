@@ -660,6 +660,81 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: "{{url}}api/posts/saved/"
+        name: Saved Post
+        meta:
+          id: req_c0692cd17142409cb9537308f0ce16d0
+          created: 1753536410494
+          modified: 1753536422352
+          isPrivate: false
+          sortKey: -1753089916765.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/save/1"
+        name: Save post
+        meta:
+          id: req_0688ec60f6184f19a0631208f4b09e65
+          created: 1753536623014
+          modified: 1753536636331
+          isPrivate: false
+          sortKey: -1753089913346.875
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}api/posts/unsave/1/"
+        name: Unsave post
+        meta:
+          id: req_bf9d25a2239641689f7bb5b913cfc7eb
+          created: 1753536643786
+          modified: 1753536658967
+          isPrivate: false
+          sortKey: -1753089911637.6875
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_06a83fa06d454db780166685cd88e56c
+          - id: pair_6f3847dea7a940259b1f217a302b1e25
+            name: Authorization
+            value: "{{access_token}}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: Categories
     meta:
       id: fld_8c6eaf6daf4f43fbae8282db0c01fb73

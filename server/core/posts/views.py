@@ -2,8 +2,8 @@ from rest_framework.views import APIView
 from django.db.models import Avg
 from rest_framework.response import Response
 from rest_framework import status, permissions
-from .models import Post, PostCategory
-from .serializers import PostSerializer, PostCategorySerializer
+from .models import Post, PostCategory, SavedPost
+from .serializers import PostSerializer, PostCategorySerializer, SavedPostSerializer
 from rest_framework.permissions import AllowAny 
 from rest_framework import generics, filters
 from django_filters.rest_framework import DjangoFilterBackend, FilterSet, NumberFilter
@@ -130,5 +130,45 @@ class AllPostsListAPIView(generics.ListAPIView):
                 '-is_followed', '-created_at'
             )
 
-        # For unauthenticated users: return default sorted by created_at
+# List all saved posts for the authenticated user
+class SavedPostListAPIView(generics.ListAPIView):
+    serializer_class = SavedPostSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return SavedPost.objects.filter(user=self.request.user).select_related('post').order_by('-saved_at')
+
+
+# Save a post for the authenticated user
+class SavePostAPIView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, post_id):
+        user = request.user
+        try:
+            post = Post.objects.get(pk=post_id)
+        except Post.DoesNotExist:
+            return Response({'detail': 'Post not found.'}, status=status.HTTP_404_NOT_FOUND)
+
+        saved_post, created = SavedPost.objects.get_or_create(user=user, post=post)
+        if not created:
+            return Response({'detail': 'Post already saved.'}, status=status.HTTP_200_OK)
+
+        serializer = SavedPostSerializer(saved_post)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+# Unsave a post for the authenticated user
+class UnsavePostAPIView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, post_id):
+        user = request.user
+        try:
+            saved_post = SavedPost.objects.get(user=user, post_id=post_id)
+        except SavedPost.DoesNotExist:
+            return Response({'detail': 'Post not saved.'}, status=status.HTTP_404_NOT_FOUND)
+
+        saved_post.delete()
+        return Response({'detail': 'Post unsaved.'}, status=status.HTTP_204_NO_CONTENT)
         return base_queryset.order_by('-created_at')

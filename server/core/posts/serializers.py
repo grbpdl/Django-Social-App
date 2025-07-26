@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Post, PostCategory
+from .models import Post, PostCategory, SavedPost
+
 from accounts.serializers import UserSerializer
 from likes.serializers import LikeSerializer
 from comments.serializers import CommentSerializer
@@ -32,3 +33,13 @@ class PostSerializer(serializers.ModelSerializer):
     def get_average_rating(self, obj):
         avg = obj.ratings.aggregate(avg_rating=Avg('rating_value'))['avg_rating']
         return round(avg, 2) if avg is not None else 0.0
+    
+class SavedPostSerializer(serializers.ModelSerializer):
+    user = serializers.StringRelatedField(read_only=True)
+    post = PostSerializer(read_only=True)
+    post_id = serializers.PrimaryKeyRelatedField(queryset=Post.objects.all(), source='post', write_only=True)
+
+    class Meta:
+        model = SavedPost
+        fields = ['id', 'user', 'post', 'post_id', 'saved_at']
+        read_only_fields = ['id', 'user', 'post', 'saved_at']

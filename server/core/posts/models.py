@@ -29,3 +29,17 @@ class Post(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.category.name if self.category else 'No Category'}"
+
+
+# Model to save posts by users
+class SavedPost(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='saved_posts')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='saved_by')
+    saved_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user', 'post')
+        ordering = ['-saved_at']
+
+    def __str__(self):
+        return f"{self.user.username} saved {self.post.title}"
