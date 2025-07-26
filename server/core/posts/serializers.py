@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Post, PostCategory
+from accounts.serializers import UserSerializer
 from likes.serializers import LikeSerializer
 from comments.serializers import CommentSerializer
 from ratings.models import Rating  # adjust path if needed
@@ -10,7 +11,14 @@ class PostCategorySerializer(serializers.ModelSerializer):
         model = PostCategory
         fields = ['id', 'name']
 
+
+class PostUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserSerializer.Meta.model
+        fields = ['id', 'username', 'full_name', 'profile_picture']
+
 class PostSerializer(serializers.ModelSerializer):
+    user = PostUserSerializer(read_only=True)
     category = serializers.PrimaryKeyRelatedField(queryset=PostCategory.objects.all())
     likes = LikeSerializer(many=True, read_only=True)
     comments = CommentSerializer(many=True, read_only=True)
